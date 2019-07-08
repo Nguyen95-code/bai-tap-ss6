@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /* bai1
+    // function alertMessege() {
+    // }
+    //
+    // alert("xin chao");*/
+
+
+    /* bai2
+    // let number = parseInt(prompt("input Number"));
+    //
+    // function displayNumber(number) {
+    //     number += 1;
+    //     return number;
+    // }
+    //
+    // alert(displayNumber(number));*/
+
+
+
+    /*bai3
+    let number1=parseInt(prompt("the first number:"));
+    let number2=parseInt(prompt("the second number:"));
+    function compareNumber(Number) {
+        let sum;
+        if (number1>number2){
+            return true ;
+        }else {
+            sum=number1+number2;
+        }
+        return sum;
+    }
+    alert(compareNumber(Number));*/
+
+
+
+
+
+
+    /*bai4
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+    result = 0;
+    alert("result truoc:"+result);
+    result = addNumbers();
+    alert("result sau :" + addNumbers());*/
+
+
+
+
+    //bai5
+
+    let search=prompt("input Data");
+    let Constellation=["Polaris","Aldebaran","Deneb","Vega","Altair",'Dubhe',"Regulus"];
+    let star=["Ursa Minor", "Tarurus", "Cygnus"," Lyra", "Aquila", "Ursa Major", "Leo"];
+    function searchData() {
+        for (let i=0;i<Constellation.length;i++){
+            if (search==Constellation[i]){
+                return star[i];
+            }else if (search==star[i]){
+                return Constellation[i];
+            }else{
+                return "no data"
+            }
+        }
+    }
+    alert(searchData());
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>Nhapdata: </td>
+            <td><input id="inputData" type="number"></td>
+            <td>
+                <select id="Data1">
+                    <option value="foot">Feet</option>
+                    <option value="meters">Meters</option>
+                </select>
+            </td>
+            <td>
+                <select id="Data2">
+                    <option value="meters">Meters</option>
+                    <option value="foot">Feet</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" onclick= "Convert()">Convert</button>
+            </td>
+        </tr>
+    </table>
+    <span id="Ketqua">Ketqua: </span>
+</form>
+<script>
+    function Convert() {
+        let inputData=document.getElementById("inputData").value;
+        let Data1=document.getElementById("Data1").value;
+        let Data2=document.getElementById("Data2").value;
+        let Ketqua;
+        if (Data1==="foot" && Data2==="meters"){
+            Ketqua=inputData*0.305;
+        }else if (Data2==="foot" && Data1==="meters"){
+            Ketqua = inputData * 3.279;
+        }else {
+            Ketqua = inputData;
+        }
+        document.getElementById("Ketqua").innerHTML=Ketqua;
+    }
+</script>
+</body>
+</html>
